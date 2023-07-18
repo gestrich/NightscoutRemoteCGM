@@ -33,6 +33,7 @@
 		38FEB836236082B900F1E810 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FEB835236082B900F1E810 /* HealthKit.framework */; platformFilter = ios; };
 		A901264F26D95DFB0081BAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A901264E26D95DFB0081BAD1 /* Assets.xcassets */; };
 		A96EF0D8279F75DE00434E5D /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96EF0D7279F75DE00434E5D /* DisclaimerView.swift */; };
+		A974D66F2A67549B007DECAC /* NightscoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = A974D66E2A67549B007DECAC /* NightscoutKit */; };
 		A9BAC74426CDBBB4001C9493 /* NightscoutAPIClientPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC74326CDBBB4001C9493 /* NightscoutAPIClientPlugin.swift */; };
 		A9BAC74626CDC3AA001C9493 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC74526CDC3AA001C9493 /* Bundle.swift */; };
 		A9BAC74926CDC3CD001C9493 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BAC74726CDC3B3001C9493 /* OSLog.swift */; };
@@ -42,7 +43,6 @@
 		C19C8BF62865216A0056D5E4 /* NightscoutAPIClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38F61399234F3066003FB95D /* NightscoutAPIClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C19C8BF92865216A0056D5E4 /* NightscoutAPIClientUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E30FB52358C25000DAB3A0 /* NightscoutAPIClientUI.framework */; platformFilter = ios; };
 		C19C8BFA2865216A0056D5E4 /* NightscoutAPIClientUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38E30FB52358C25000DAB3A0 /* NightscoutAPIClientUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C1CEBFF729BCC2C8007FD8A3 /* NightscoutKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1CEBFF629BCC2C8007FD8A3 /* NightscoutKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1CEBFF729BCC2C8007FD8A3 /* NightscoutKit in Frameworks */,
+				A974D66F2A67549B007DECAC /* NightscoutKit in Frameworks */,
 				38FEB836236082B900F1E810 /* HealthKit.framework in Frameworks */,
 				38F613B7234F333C003FB95D /* LoopKit.framework in Frameworks */,
 			);
@@ -382,7 +382,7 @@
 			);
 			name = NightscoutAPIClient;
 			packageProductDependencies = (
-				C1CEBFF629BCC2C8007FD8A3 /* NightscoutKit */,
+				A974D66E2A67549B007DECAC /* NightscoutKit */,
 			);
 			productName = NightscoutAPIClient;
 			productReference = 38F61399234F3066003FB95D /* NightscoutAPIClient.framework */;
@@ -467,7 +467,7 @@
 			);
 			mainGroup = 38F6138F234F3066003FB95D;
 			packageReferences = (
-				C1CEBFF529BCC2C8007FD8A3 /* XCRemoteSwiftPackageReference "NightscoutKit" */,
+				A974D66D2A67549A007DECAC /* XCRemoteSwiftPackageReference "NightscoutKit" */,
 			);
 			productRefGroup = 38F6139A234F3066003FB95D /* Products */;
 			projectDirPath = "";
@@ -997,20 +997,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C1CEBFF529BCC2C8007FD8A3 /* XCRemoteSwiftPackageReference "NightscoutKit" */ = {
+		A974D66D2A67549A007DECAC /* XCRemoteSwiftPackageReference "NightscoutKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/LoopKit/NightscoutKit";
+			repositoryURL = "https://github.com/gestrich/NightscoutKit.git";
 			requirement = {
-				branch = main;
+				branch = "feature/2023-03/bg/remote-commands";
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C1CEBFF629BCC2C8007FD8A3 /* NightscoutKit */ = {
+		A974D66E2A67549B007DECAC /* NightscoutKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C1CEBFF529BCC2C8007FD8A3 /* XCRemoteSwiftPackageReference "NightscoutKit" */;
+			package = A974D66D2A67549A007DECAC /* XCRemoteSwiftPackageReference "NightscoutKit" */;
 			productName = NightscoutKit;
 		};
 /* End XCSwiftPackageProductDependency section */
